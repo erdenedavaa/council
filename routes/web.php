@@ -25,7 +25,7 @@
     Route::view('scan', 'scan');
 
     Route::get('threads', 'ThreadsController@index')->name('threads');
-    Route::get('threads/create', 'ThreadsController@create');
+    Route::get('threads/create', 'ThreadsController@create')->middleware('must-be-confirmed');
     Route::get('threads/search', 'SearchController@show');
     Route::post('threads', 'ThreadsController@store')->middleware('must-be-confirmed');
     Route::get('threads/{channel}', 'ThreadsController@index');
