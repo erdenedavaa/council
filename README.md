@@ -30,6 +30,12 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
+Then, migrate your database to create tables.
+
+```bash
+php artisan migrate
+```
+
 ### Step 3.
 
 reCAPTCHA is a Google tool to help prevent from spam. You'll need to create a free account (don'w worry, it's quick).
@@ -57,7 +63,7 @@ Once finished, clear your server cache, and you're all set to go!
 php artisan cache:clear
 ```
 
-## Step 5.
+### Step 5.
 
 Use your forum! Visit http://council.test/threads to create a new account and publish your first thread.
 
