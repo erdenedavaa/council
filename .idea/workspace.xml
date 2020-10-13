@@ -22,7 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5252370-78c1-4d1f-9049-4429230abd49" name="Default Changelist" comment="j" />
+    <list default="true" id="f5252370-78c1-4d1f-9049-4429230abd49" name="Default Changelist" comment="j">
+      <change afterPath="$PROJECT_DIR$/database/seeds/SampleDataSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Reply.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Thread.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -207,25 +215,25 @@
       <recent name="$PROJECT_DIR$/app/Inspections" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ReplyTest.a_reply_body_is_sanitized_automatically">
+  <component name="RunManager" selected="PHPUnit.ReputationTest.a_user_earns_points_when_their_reply_is_marked_as_best">
     <configuration name="ReplyTest.a_reply_body_is_sanitized_automatically" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ReplyTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ReplyTest.php" method="a_reply_body_is_sanitized_automatically" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="SearchTest.a_user_can_search_threads" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\SearchTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SearchTest.php" method="a_user_can_search_threads" scope="Method" />
+    <configuration name="ReputationTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ReputationTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ReputationTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReputationTest.a_user_earns_points_when_their_reply_is_marked_as_best" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ReputationTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ReputationTest.php" method="a_user_earns_points_when_their_reply_is_marked_as_best" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReputationTest.a_user_earns_points_when_they_reply_to_a_thread" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ReputationTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/ReputationTest.php" method="a_user_earns_points_when_they_reply_to_a_thread" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ThreadTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\ThreadTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ThreadTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ThreadTest.a_thread_body_is_sanitized_automatically" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\ThreadTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ThreadTest.php" method="a_thread_body_is_sanitized_automatically" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="UpdateThreadsTest.unauthorized_users_may_not_update_threads" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\UpdateThreadsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/UpdateThreadsTest.php" method="unauthorized_users_may_not_update_threads" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -234,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ReputationTest.a_user_earns_points_when_their_reply_is_marked_as_best" />
+        <item itemvalue="PHPUnit.ReputationTest.a_user_earns_points_when_they_reply_to_a_thread" />
+        <item itemvalue="PHPUnit.ReputationTest" />
         <item itemvalue="PHPUnit.ReplyTest.a_reply_body_is_sanitized_automatically" />
         <item itemvalue="PHPUnit.ThreadTest" />
-        <item itemvalue="PHPUnit.ThreadTest.a_thread_body_is_sanitized_automatically" />
-        <item itemvalue="PHPUnit.SearchTest.a_user_can_search_threads" />
-        <item itemvalue="PHPUnit.UpdateThreadsTest.unauthorized_users_may_not_update_threads" />
       </list>
     </recent_temporary>
   </component>
@@ -261,6 +269,8 @@
       <workItem from="1601542181680" duration="164000" />
       <workItem from="1601542457218" duration="33952000" />
       <workItem from="1601726937790" duration="58761000" />
+      <workItem from="1602522094754" duration="16000" />
+      <workItem from="1602522121764" duration="3744000" />
     </task>
     <servers />
   </component>
@@ -341,26 +351,26 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="544" y="247" key="EditFileWatcherDialog/0.23.1440.877@0.23.1440.877" timestamp="1597739948705" />
-    <state width="1398" height="726" key="GridCell.Tab.0.bottom" timestamp="1602140507436">
+    <state width="1398" height="726" key="GridCell.Tab.0.bottom" timestamp="1602555174825">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600707468770" />
-    <state width="1398" height="726" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1602140507436" />
-    <state width="1398" height="726" key="GridCell.Tab.0.center" timestamp="1602140507435">
+    <state width="1398" height="726" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1602555174825" />
+    <state width="1398" height="726" key="GridCell.Tab.0.center" timestamp="1602555174825">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600707468769" />
-    <state width="1398" height="726" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1602140507435" />
-    <state width="1398" height="726" key="GridCell.Tab.0.left" timestamp="1602140507435">
+    <state width="1398" height="726" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1602555174825" />
+    <state width="1398" height="726" key="GridCell.Tab.0.left" timestamp="1602555174825">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600707468769" />
-    <state width="1398" height="726" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1602140507435" />
-    <state width="1398" height="726" key="GridCell.Tab.0.right" timestamp="1602140507436">
+    <state width="1398" height="726" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1602555174825" />
+    <state width="1398" height="726" key="GridCell.Tab.0.right" timestamp="1602555174825">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600707468769" />
-    <state width="1398" height="726" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1602140507436" />
+    <state width="1398" height="726" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1602555174825" />
     <state width="1140" height="349" key="GridCell.Tab.1.bottom" timestamp="1601019473662">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -382,6 +392,10 @@
     </state>
     <state x="694" y="194" key="NewPhpClassDialog/0.23.1440.877@0.23.1440.877" timestamp="1600357646200" />
     <state x="810" y="223" key="NewPhpClassDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1601052946425" />
+    <state x="884" y="461" key="NewPhpFileDialog" timestamp="1602523050845">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="884" y="461" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602523050845" />
     <state x="515" y="207" width="1421" height="722" key="SettingsEditor" timestamp="1602006417731">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -391,16 +405,16 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="254" height="200" key="ShowFilterAction_Filter_Popup/0.23.1440.877@0.23.1440.877" timestamp="1598693541512" />
-    <state x="525" y="230" width="630" height="614" key="StructurePopup" timestamp="1602120449741">
+    <state x="525" y="230" width="630" height="614" key="StructurePopup" timestamp="1602556979088">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="450" y="200" width="540" height="524" key="StructurePopup/0.23.1440.877@0.23.1440.877" timestamp="1600609864255" />
-    <state x="525" y="230" width="630" height="614" key="StructurePopup/0.23.1680.1027@0.23.1680.1027" timestamp="1602120449741" />
-    <state width="584" height="469" key="SwitcherDM" timestamp="1602140440250">
+    <state x="525" y="230" width="630" height="614" key="StructurePopup/0.23.1680.1027@0.23.1680.1027" timestamp="1602556979088" />
+    <state width="584" height="469" key="SwitcherDM" timestamp="1602556763296">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="500" height="400" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1600707601070" />
-    <state width="584" height="469" key="SwitcherDM/0.23.1680.1027@0.23.1680.1027" timestamp="1602140440250" />
+    <state width="584" height="469" key="SwitcherDM/0.23.1680.1027@0.23.1680.1027" timestamp="1602556763296" />
     <state x="673" y="249" width="919" height="680" key="find.popup" timestamp="1601740737609">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -410,11 +424,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="660" y="251" key="refactoring.ChangeSignatureDialog/0.23.1440.877@0.23.1440.877" timestamp="1598887527378" />
-    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup" timestamp="1602140442398">
+    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup" timestamp="1602556789006">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1600707270248" />
-    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1602140442398" />
+    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1602556789006" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -442,7 +456,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/Replies.vue</url>
           <line>19</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
