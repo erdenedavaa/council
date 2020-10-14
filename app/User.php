@@ -70,7 +70,8 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return in_array($this->name, ['Ongoo', 'JohnDoe', 'JaneDoe']);
+        // return in_array($this->name, ['Ongoo', 'JohnDoe', 'JaneDoe']);
+        return in_array($this->email, config('council.administrators'));
     }
 
     public function visitedThreadCacheKey($thread)

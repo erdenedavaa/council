@@ -73,3 +73,16 @@
     Route::delete('/profiles/{user}/notifications/{notification}', 'UserNotificationsController@destroy');
 
     Route::get('/register/confirm', 'Auth\RegisterConfirmationController@index')->name('register.confirm');
+
+    Route::group([
+        'prefix' => 'admin',
+        'middleware' => 'admin',
+        'namespace' => 'Admin'
+    ], function () {
+        Route::get('', 'DashboardController@index')->name('admin.dashboard.index');
+        Route::post('channels', 'ChannelsController@store')->name('admin.channels.store');
+        Route::get('channels', 'ChannelsController@index')->name('admin.channels.index');
+        Route::get('channels/create', 'ChannelsController@create')->name('admin.channels.create');
+        Route::get('channels/{channel}/edit', 'ChannelsController@edit')->name('admin.channels.edit');
+        Route::patch('channels/{channel}', 'ChannelsController@update')->name('admin.channels.update');
+    });

@@ -69,7 +69,7 @@
 {{--                                <button type="submit" class="btn btn-primary">Publish</button>--}}
 
                                 <button class="btn btn-primary g-recaptcha"
-                                        data-sitekey="{{ config('council.recaptcha.key') }}"
+                                        data-sitekey="{{ config('services.recaptcha.key') }}"
                                         data-callback='onSubmit'
                                         data-action='submit'>Publish</button>
                             </div>

@@ -34,6 +34,8 @@ class Thread extends Model
 
         static::deleting(function ($thread) {
             $thread->replies->each->delete();
+
+            Reputation::reduce($thread->creator, Reputation::THREAD_WAS_PUBLISHED);
         });
 
         // When this thread created first time...

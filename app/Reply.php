@@ -36,6 +36,8 @@ class Reply extends Model
 
             $reply->thread->decrement('replies_count');
 //            dd($reply->thread->replies_count);
+
+            Reputation::reduce($reply->owner, Reputation::REPLY_POSTED);
         });
     }
 

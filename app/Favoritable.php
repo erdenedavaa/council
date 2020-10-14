@@ -54,6 +54,11 @@
             $attributes = ['user_id' => auth()->id()];
 
             if (! $this->favorites()->where($attributes)->exists()) {
+                // dd('hit');
+                Reputation::award(auth()->user(), Reputation::REPLY_FAVORITED);
+
+                // dd(auth()->user()->reputation);
+
                 return $this->favorites()->create($attributes);
             }
         }
@@ -63,6 +68,8 @@
             $attributes = ['user_id' => auth()->id()];
 
             $this->favorites()->where($attributes)->get()->each->delete();
+
+            Reputation::reduce(auth()->user(), Reputation::REPLY_FAVORITED);
 
             // Doorh deer syntactic shugar deer hiilee
 //            $this->favorites()->where($attributes)->get()->each(function ($favorite) {

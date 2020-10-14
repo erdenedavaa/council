@@ -61,6 +61,13 @@
 
                     <user-notifications></user-notifications>
 
+                    @if (Auth::user()->isAdmin())
+{{--                        <li><a href="/admin"><span class="glyphicon glypicon-cog" area-hidden="true"></span></a></li>--}}
+                        <li class="text-sm pb-3">
+                            <a class="link" href="{{ route('admin.dashboard.index') }}">Admin</a>
+                        </li>
+                    @endif
+
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

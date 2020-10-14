@@ -4,7 +4,6 @@
 
         <input type="text" class="form-control" v-model="form.title">
 
-
     </div>
 
     <div class="card-body">
@@ -42,7 +41,9 @@
                  class="mr-1">
 
             <span>
-                <a href="{{ route('profile', $thread->creator) }}" class="pr-1">{{ $thread->creator->name }}</a> posted:
+                <a href="{{ route('profile', $thread->creator) }}" class="pr-1">
+                    {{ $thread->creator->name }} ({{ $thread->creator->reputation }} XP)
+                </a> posted:
                 <span v-text="title"></span>
             </span>
 
