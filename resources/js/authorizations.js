@@ -23,7 +23,8 @@ module.exports = {
     },
 
     isAdmin() {
-        return ['Ongoo', 'JohnDoe', 'JaneDoe'].includes(user.name);
+        return user.isAdmin;
+        // return ['Ongoo', 'JohnDoe', 'JaneDoe'].includes(user.name);
         // Array нь auth user name агуулсан байна уу шалгаж байна,
         // хэрвээ агуулж байвал there a admin (if so)
     }

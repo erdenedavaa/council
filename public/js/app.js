@@ -100446,7 +100446,8 @@ module.exports = {
     return model[prop] === user.id;
   },
   isAdmin: function isAdmin() {
-    return ['Ongoo', 'JohnDoe', 'JaneDoe'].includes(user.name); // Array нь auth user name агуулсан байна уу шалгаж байна,
+    return user.isAdmin; // return ['Ongoo', 'JohnDoe', 'JaneDoe'].includes(user.name);
+    // Array нь auth user name агуулсан байна уу шалгаж байна,
     // хэрвээ агуулж байвал there a admin (if so)
   }
 };

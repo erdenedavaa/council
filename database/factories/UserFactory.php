@@ -39,11 +39,13 @@ $factory->state(App\User::class, 'unconfirmed', function() {
 
 $factory->state(App\User::class, 'administrator', function() {
     return [
-        'name' => 'Ongoo'
+        // 'name' => 'Ongoo'
+        // suuld idevhgui bolgoson bn
+        'isAdmin' => true
 
         //  эсвэл дараах байдлаар хийж болно
         // is_admin column үүсгээд үүнд утга онооно
-//        'is_admin' = true
+       // 'is_admin' = true
     ];
 });
 
@@ -70,7 +72,8 @@ $factory->define(App\Channel::class, function($faker) {
 
     return [
         'name' => $name,
-        'slug' => $name
+        'slug' => $name,
+        'description' => $faker->sentence
     ];
 });
 
