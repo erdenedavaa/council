@@ -13,8 +13,8 @@ Begin by cloning this repository to your machine, and installing all Composer de
 ```bash
 git clone https://github.com/erdenedavaa/council.git
 cd council && composer install
-php artisan key:generate
 mv .env.example .env
+php artisan key:generate
 ```
 
 ### Step 2.
@@ -55,7 +55,14 @@ RECAPTCHA_SECRET=PASTE_SECRET_HERE
 
 ### Step 4.
 
-Until an adminstrator portal is available, manually insert any number of "channels" (think of these as forum categories) into to "channels" table in your databse.
+Finally, add one or more channels. Login with the following credentials:
+
+```
+email: admin@example.com
+password: admin
+```
+
+now visit: http://council.test/admin/channels and add at least one channel.
 
 Once finished, clear your server cache, and you're all set to go!
 
@@ -65,6 +72,6 @@ php artisan cache:clear
 
 ### Step 5.
 
-Use your forum! Visit http://council.test/threads to create a new account and publish your first thread.
+Use your forum! Visit `http://council.test/threads` to create a new account and publish your first thread.
 
 

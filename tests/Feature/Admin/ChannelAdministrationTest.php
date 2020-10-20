@@ -23,11 +23,7 @@
         /** @test */
         public function an_administrator_can_access_the_channel_administration_section()
         {
-            $administrator = factory(User::class)
-                ->states('administrator')
-                ->create();
-
-            $this->actingAs($administrator)
+            $this->signInAdmin()
                 ->get('/admin/channels')
                 ->assertStatus(Response::HTTP_OK);
         }
@@ -53,8 +49,6 @@
                 'name' => 'php',
                 'description' => 'This is the channel for discussing all things PHP.',
             ]);
-
-            // dd($response->toArray);
 
             $this->get($response->headers->get('Location'))
                 ->assertSee('php')
@@ -84,16 +78,17 @@
 
         protected function createChannel($overrides = [])
         {
-            $administrator = factory(User::class)
-                ->states('administrator')
-                ->create();
-            $this->signIn($administrator);
+            $this->signInAdmin();
+            // $administrator = factory(User::class)
+            //     ->states('administrator')
+            //     ->create();
+            // $this->signIn($administrator);
 
             $channel = make(Channel::class, $overrides);
 
             // dd($channel->threads());
 
-            return $this->post('/admin/channels', $channel->toArray());
+            return $this->post(route('admin.channels.store'), $channel->toArray());
         }
 
     }

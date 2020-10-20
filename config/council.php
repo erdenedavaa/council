@@ -9,5 +9,6 @@ return [
     'administrators' => [
         // Add the email address of users who should be administrators here.
         // 'o@o.com'
+        // 'admin@example.com'
     ]
 ];

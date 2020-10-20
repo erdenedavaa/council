@@ -4,12 +4,13 @@ namespace Tests\Feature;
 
 use App\Activity;
 use Carbon\Carbon;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ActivityTest extends TestCase
 {
-    use DatabaseMigrations;
+    use RefreshDatabase;
 
     /** @test */
     function it_records_activity_when_a_thread_is_created()

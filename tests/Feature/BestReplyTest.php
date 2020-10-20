@@ -2,6 +2,7 @@
 
     namespace Tests\Feature;
 
+    use Illuminate\Foundation\Testing\RefreshDatabase;
     use Illuminate\Http\UploadedFile;
     use Illuminate\Support\Facades\Storage;
     use Tests\TestCase;
@@ -9,7 +10,7 @@
 
     class BestReplyTest extends TestCase
     {
-        use DatabaseMigrations;
+        use RefreshDatabase;
 
         /** @test */
         function a_thread_creator_may_mark_any_reply_as_the_best_reply()

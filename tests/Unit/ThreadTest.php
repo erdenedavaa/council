@@ -5,13 +5,14 @@
     use App\Notifications\ThreadWasUpdated;
     use Carbon\Carbon;
     use Illuminate\Foundation\Testing\DatabaseMigrations;
+    use Illuminate\Foundation\Testing\RefreshDatabase;
     use Illuminate\Support\Facades\Notification;
     use Illuminate\Support\Facades\Redis;
     use Tests\TestCase;
 
     class ThreadTest extends TestCase
     {
-        use DatabaseMigrations;
+        use RefreshDatabase;
 
         protected $thread;
 

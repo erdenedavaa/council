@@ -23,6 +23,15 @@ class User extends Authenticatable
     protected $guarded = [];
 
     /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    // protected $appends = [
+    //     'isAdmin'
+    // ];
+
+    /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
@@ -73,6 +82,17 @@ class User extends Authenticatable
     //     // return in_array($this->name, ['Ongoo', 'JohnDoe', 'JaneDoe']);
     //     return in_array($this->email, config('council.administrators'));
     // }
+
+    /**
+     * Determine if the user is an administrator.
+     *
+     * @return bool
+     */
+    // public function getIsAdminAttribute()
+    // {
+    //     return $this->isAdmin();
+    // }
+
 
     public function visitedThreadCacheKey($thread)
     {

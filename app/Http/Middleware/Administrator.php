@@ -19,7 +19,6 @@ class Administrator
             return $next($request);
         }
 
-
         // throw exception хийж болно
         // эсвэл
 
