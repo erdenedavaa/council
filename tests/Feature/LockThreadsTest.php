@@ -32,9 +32,10 @@ class LockThreadsTest extends TestCase
         // Иймээс ModelFactory дээр "state" зааж өгөх байдлаар шийдэж болно
         // $this->signIn(create('App\User', ['name' => 'Ongoo']));
 
-        $user = factory('App\User')->create();
-        config(['council.administrators' => [ $user->email ]]);
-        $this->signIn($user);
+        // $user = factory('App\User')->create();
+        // config(['council.administrators' => [ $user->email ]]);
+        // $this->signIn($user);
+        $this->signInAdmin();
 
         $thread = create('App\Thread', ['user_id' => auth()->id()]);
 
@@ -50,7 +51,8 @@ class LockThreadsTest extends TestCase
         // Иймээс ModelFactory дээр "state" зааж өгөх байдлаар шийдэж болно
         // $this->signIn(create('App\User', ['name' => 'Ongoo']));
 
-        $this->signIn(factory('App\User')->states('administrator')->create());
+        // $this->signIn(factory('App\User')->states('administrator')->create());
+        $this->signInAdmin();
 
         $thread = create('App\Thread', ['user_id' => auth()->id(), 'locked' => true]);
 
