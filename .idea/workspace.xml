@@ -23,43 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5252370-78c1-4d1f-9049-4429230abd49" name="Default Changelist" comment="j">
-      <change afterPath="$PROJECT_DIR$/License.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Administrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Administrator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfEmailNotConfirmed.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfEmailNotConfirmed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Inspections/Spam.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Inspections/Spam.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/council.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/council.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/channels/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/channels/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CreatesApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AddAvatarTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AddAvatarTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Admin/AdministratorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Admin/AdministratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Admin/ChannelAdministrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Admin/ChannelAdministrationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/BestReplyTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/BestReplyTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CreateThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CreateThreadsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/FavoritesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/FavoritesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/LockThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/LockThreadsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/MentionUsersTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/MentionUsersTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/NotificationsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/NotificationsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ParticipateInThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ParticipateInThreadsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ProfilesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ProfilesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ReadThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ReadThreadsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/SubscribeToThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/SubscribeToThreadsTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/TrendingThreadsTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/TrendingThreadsTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ActivityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ActivityTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ChannelTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ChannelTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ReplyTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ReplyTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/SpamTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/SpamTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ThreadTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ThreadTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/UserTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +223,7 @@
       <recent name="$PROJECT_DIR$/public/storage/avatars" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.AdministratorTest">
+  <component name="RunManager" selected="PHPUnit.ChannelAdministrationTest">
     <configuration name="ActivityTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\ActivityTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/ActivityTest.php" scope="Class" />
       <method v="2" />
@@ -257,16 +232,16 @@
       <TestRunner class="Tests\Feature\Admin\AdministratorTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Admin/AdministratorTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="BestReplyTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\BestReplyTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/BestReplyTest.php" scope="Class" />
+    <configuration name="AdministratorTest.an_administrator_can_access_the_administration_section" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Admin\AdministratorTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Admin/AdministratorTest.php" method="an_administrator_can_access_the_administration_section" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateThreadsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CreateThreadsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CreateThreadsTest.php" scope="Class" />
+    <configuration name="ChannelAdministrationTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Admin\ChannelAdministrationTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Admin/ChannelAdministrationTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="SubscribeToThreadsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\SubscribeToThreadsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/SubscribeToThreadsTest.php" scope="Class" />
+    <configuration name="LockThreadsTest.administrator_can_lock_threads" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\LockThreadsTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/LockThreadsTest.php" method="administrator_can_lock_threads" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -275,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ChannelAdministrationTest" />
         <item itemvalue="PHPUnit.AdministratorTest" />
+        <item itemvalue="PHPUnit.AdministratorTest.an_administrator_can_access_the_administration_section" />
+        <item itemvalue="PHPUnit.LockThreadsTest.administrator_can_lock_threads" />
         <item itemvalue="PHPUnit.ActivityTest" />
-        <item itemvalue="PHPUnit.SubscribeToThreadsTest" />
-        <item itemvalue="PHPUnit.CreateThreadsTest" />
-        <item itemvalue="PHPUnit.BestReplyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +279,7 @@
       <workItem from="1601726937790" duration="58761000" />
       <workItem from="1602522094754" duration="16000" />
       <workItem from="1602522121764" duration="34538000" />
-      <workItem from="1603197913233" duration="5626000" />
+      <workItem from="1603197913233" duration="7004000" />
     </task>
     <servers />
   </component>
@@ -385,26 +360,26 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="544" y="247" key="EditFileWatcherDialog/0.23.1440.877@0.23.1440.877" timestamp="1597739948705" />
-    <state width="1398" height="726" key="GridCell.Tab.0.bottom" timestamp="1603207905001">
+    <state width="1398" height="726" key="GridCell.Tab.0.bottom" timestamp="1603209157435">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1600707468770" />
-    <state width="1398" height="726" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1603207905001" />
-    <state width="1398" height="726" key="GridCell.Tab.0.center" timestamp="1603207905001">
+    <state width="1398" height="726" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1603209157435" />
+    <state width="1398" height="726" key="GridCell.Tab.0.center" timestamp="1603209157434">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1600707468769" />
-    <state width="1398" height="726" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1603207905001" />
-    <state width="1398" height="726" key="GridCell.Tab.0.left" timestamp="1603207905001">
+    <state width="1398" height="726" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1603209157434" />
+    <state width="1398" height="726" key="GridCell.Tab.0.left" timestamp="1603209157434">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1600707468769" />
-    <state width="1398" height="726" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1603207905001" />
-    <state width="1398" height="726" key="GridCell.Tab.0.right" timestamp="1603207905001">
+    <state width="1398" height="726" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1603209157434" />
+    <state width="1398" height="726" key="GridCell.Tab.0.right" timestamp="1603209157435">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1398" height="726" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1600707468769" />
-    <state width="1398" height="726" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1603207905001" />
+    <state width="1398" height="726" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1603209157435" />
     <state width="1140" height="349" key="GridCell.Tab.1.bottom" timestamp="1601019473662">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -439,16 +414,16 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="254" height="200" key="ShowFilterAction_Filter_Popup/0.23.1440.877@0.23.1440.877" timestamp="1598693541512" />
-    <state x="525" y="230" width="630" height="614" key="StructurePopup" timestamp="1603207881451">
+    <state x="525" y="230" width="630" height="614" key="StructurePopup" timestamp="1603208044783">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="450" y="200" width="540" height="524" key="StructurePopup/0.23.1440.877@0.23.1440.877" timestamp="1600609864255" />
-    <state x="525" y="230" width="630" height="614" key="StructurePopup/0.23.1680.1027@0.23.1680.1027" timestamp="1603207881451" />
-    <state width="584" height="469" key="SwitcherDM" timestamp="1603207048715">
+    <state x="525" y="230" width="630" height="614" key="StructurePopup/0.23.1680.1027@0.23.1680.1027" timestamp="1603208044783" />
+    <state width="584" height="469" key="SwitcherDM" timestamp="1603208166682">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="500" height="400" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1600707601070" />
-    <state width="584" height="469" key="SwitcherDM/0.23.1680.1027@0.23.1680.1027" timestamp="1603207048715" />
+    <state width="584" height="469" key="SwitcherDM/0.23.1680.1027@0.23.1680.1027" timestamp="1603208166682" />
     <state x="673" y="249" width="919" height="680" key="find.popup" timestamp="1601740737609">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -458,11 +433,11 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="660" y="251" key="refactoring.ChangeSignatureDialog/0.23.1440.877@0.23.1440.877" timestamp="1598887527378" />
-    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup" timestamp="1603207827206">
+    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup" timestamp="1603209263526">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1600707270248" />
-    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1603207827206" />
+    <state x="860" y="258" width="782" height="792" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1603209263526" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

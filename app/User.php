@@ -27,9 +27,9 @@ class User extends Authenticatable
      *
      * @var array
      */
-    // protected $appends = [
-    //     'isAdmin'
-    // ];
+    protected $appends = [
+        'isAdmin'
+    ];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -77,21 +77,21 @@ class User extends Authenticatable
         $this->save();
     }
 
-    // public function isAdmin()
-    // {
-    //     // return in_array($this->name, ['Ongoo', 'JohnDoe', 'JaneDoe']);
-    //     return in_array($this->email, config('council.administrators'));
-    // }
+    public function isAdmin()
+    {
+        // return in_array($this->name, ['Ongoo', 'JohnDoe', 'JaneDoe']);
+        return in_array($this->email, config('council.administrators'));
+    }
 
     /**
      * Determine if the user is an administrator.
      *
      * @return bool
      */
-    // public function getIsAdminAttribute()
-    // {
-    //     return $this->isAdmin();
-    // }
+    public function getIsAdminAttribute()
+    {
+        return $this->isAdmin();
+    }
 
 
     public function visitedThreadCacheKey($thread)

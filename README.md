@@ -55,16 +55,12 @@ RECAPTCHA_SECRET=PASTE_SECRET_HERE
 
 ### Step 4.
 
-Finally, add one or more channels. Login with the following credentials:
+Finally, add one or more channels.
 
-```
-email: admin@example.com
-password: admin
-```
+Visit: http://council.test/register and register an account.
 
-now visit: http://council.test/admin/channels and add at least one channel.
-
-Once finished, clear your server cache, and you're all set to go!
+Edit `config/council.php`, adding the email address of the account you just created.
+Visit: http://council.test/admin/channels and add at least one channel.  
 
 ```bash
 php artisan cache:clear

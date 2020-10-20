@@ -61,7 +61,7 @@
 
                     <user-notifications></user-notifications>
 
-                    @if (Auth::user()->isAdmin)
+                    @if (Auth::user()->isAdmin())
 {{--                        <li><a href="/admin"><span class="glyphicon glypicon-cog" area-hidden="true"></span></a></li>--}}
                         <li class="text-sm pb-3">
                             <a class="link" href="{{ route('admin.dashboard.index') }}">Admin</a>

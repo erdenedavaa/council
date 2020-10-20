@@ -32,7 +32,9 @@ class LockThreadsTest extends TestCase
         // Иймээс ModelFactory дээр "state" зааж өгөх байдлаар шийдэж болно
         // $this->signIn(create('App\User', ['name' => 'Ongoo']));
 
-        $this->signIn(factory('App\User')->states('administrator')->create());
+        $user = factory('App\User')->create();
+        config(['council.administrators' => [ $user->email ]]);
+        $this->signIn($user);
 
         $thread = create('App\Thread', ['user_id' => auth()->id()]);
 
