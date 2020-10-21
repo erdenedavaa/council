@@ -1,12 +1,13 @@
 <script>
 import Replies from '../components/Replies';
 import SubscribeButton from '../components/SubscribeButton.vue';
+import Highlight from '../components/Highlight.vue';
 
 export default {
     // name: "Thread",
     props: ['thread'],
 
-    components: {Replies, SubscribeButton},
+    components: {Replies, SubscribeButton, Highlight},
     // ene bol child component
 
     data() {
@@ -27,7 +28,6 @@ export default {
 
     methods: {
         toggleLock() {
-
            // axios.post('/locked-threads/' + this.thread.slug);
             // toggle hiij bga tul deerhiig daraah baidlaar hiine
             let uri = `/locked-threads/${this.thread.slug}`;

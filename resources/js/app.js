@@ -33,6 +33,7 @@ Vue.prototype.authorize = function (...params) {
 
 Vue.prototype.signedIn = window.App.signedIn;
 
+
 Vue.component('flash', require('./components/Flash.vue').default);
 Vue.component('paginator', require('./components/Paginator.vue').default);
 Vue.component('user-notifications', require('./components/UserNotifications.vue').default);

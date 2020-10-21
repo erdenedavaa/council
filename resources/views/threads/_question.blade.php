@@ -51,7 +51,9 @@
 
     </div>
 
-    <div class="card-body" v-html="body"></div>
+    <div ref="question" class="card-body">
+        <highlight :content="body"></highlight>
+    </div>
 
     <div class="card-footer" v-if="authorize('owns', thread)">
         <button class="btn btn-outline-primary btn-sm" @click="editing = true">Edit</button>
